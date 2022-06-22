@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>UB MULTIHUB</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+    <!--- Bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+     <!--- Font awesome-->
+     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
+    <!-- My css-->
+    <link rel="stylesheet" href="./css/mycss.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top"> <i class="fa fa-long-arrow-up"></i></button>
+
+
+    <!-- Navbar-->
+
+    <header class="fixed-top bg-light ">
+        <nav class="navbar navbar-expand-md   ">
+            <a class="navbar-brand" href="#">UB MULTIHUB</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="text-dark">X</span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item  ">
+                        <a class="nav-link " href="./index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallry.html">GALLERY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./contact.html">CONTACT</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--End Navbar -->
+
+
+    <!-- Start Home -->
+    <section class="home wow flash" id="home">
+        <div class="container">
+            <h1 class="wow slideInLeft" data-wow-delay="1s">It's <span>gym</span> time. Let's go</h1>
+            <h1 class="wow slideInRight" data-wow-delay="1s">We are ready to <span>fit you</span></h1>
+        </div>
+
+    </section>
+    <!-- End Home -->
+
+
+    <section class="contact-section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 " data-aos="fade-up">
+                    <div class="well well-sm">
+                        <form class="form-horizontal" method="POST" action="contact_backend.php">
+                            <fieldset>
+                                <legend class="text-center header">Contact us</legend>
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <label for="fname">Full Name :</label>
+
+                                        <input id="fname" name="name" type="text" class="form-control" required="">
+                                    </div>
+                                </div>
+
+
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <label for="fname">Email Address :</label>
+
+                                        <input id="email" name="email" type="text" class="form-control" required="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <label for="fname">Phone :</label>
+
+                                        <input id="phone" name="phone" type="text" class="form-control" required=""
+                                            pattern="[0-9]+" maxlength="10" minlength="10"
+                                            onkeypress="return isNumberKey(event)">
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-10 col-md-offset-1">
+                                        <label for="fname">Enter your massage :</label>
+
+                                        <textarea class="form-control" id="message" name="message" rows="7"
+                                            required=""></textarea>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="col-md-12 text-center">
+                                        <button type="submit" class="btn" name="btn"><a href="#">Submit </a></button>
+
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6" data-aos="fade-up">
+                    <div>
+                        <div class="panel panel-default">
+                            <div class="text-center header">
+                                <h2>Our GYM</h2>
+                            </div>
+                            <div class="panel-body text-center">
+                                <h3>Full address of the organization</h3>
+                                <p>pashwanath kirana Stores,3rd Floor,</p>
+                                <p>Gajanan Housing Socity,Karad
+                                <p>
+                                <p>Karad-Vita Road, Saidapur-Karad, Dist. Satara </p>
+                                <p>------------------------------------------------</p>
+                                <br />
+
+                                <h3>Contact number</h3>
+                                <p>+91 8007971188 / +91 9767867382</p>
+                                <p>------------------------------------------------</p>
+                                <br />
+
+                                <h2>Email</h2>
+                                <p>Umeshbhosale1188@gmail.com</p>
+                                <p>------------------------------------------------</p>
+
+                            </div>
+                            <div id="map1" class="map">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section-6">
+
+        <!-- Footer -->
+        <footer class="footer-section">
+            <div class="container">
+                <div class="footer-cta pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="cta-text">
+                                    <h4>Find us</h4>
+                                    <span>Gajanan Housing Socity , karad </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="fas fa-phone"></i>
+                                <div class="cta-text">
+                                    <h4>Call us</h4>
+                                    <span> 8007971188 , 9767867382</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-md-4 mb-30">
+                            <div class="single-cta">
+                                <i class="far fa-envelope-open"></i>
+                                <div class="cta-text">
+                                    <h4>Mail us</h4>
+                                    <span>mail@info.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-content pt-5 pb-5">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-logo">
+                                    <a href="index.html"><img src="https://i.ibb.co/QDy827D/ak-logo.png"
+                                            class="img-fluid" alt="logo"></a>
+                                </div>
+                                <div class="footer-text">
+                                    <p>Just Fit - UB MULTIHUB GYM is a professional fitness training center. We provide
+                                        all kinds of fitness training and we have all modern instruments.
+
+
+                                    </p>
+                                </div>
+                                <div class="footer-social-icon">
+                                    <span>Follow us</span>
+                                    <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                    <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                    <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Useful Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">Sports Workout </a></li>
+                                    <li><a href="#">Body Building</a></li>
+                                    <li><a href="#">Ladies Batches</a></li>
+                                    <li><a href="#">TRX Workout</a></li>
+                                    <li><a href="#">Cardio</a></li>
+                                    <li><a href="#">Personal Trainning</a></li>
+                                    <li><a href="#">Weight Gain</a></li>
+                                    <li><a href="#">Weight loss </a></li>
+                                    <li><a href="#">Diet Nutrition</a></li>
+                                    <li><a href="#">Latest News</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                            <div class="footer-widget">
+                                <div class="footer-widget-heading">
+                                    <h3>Subscribe</h3>
+                                </div>
+                                <div class="footer-text mb-25">
+                                    <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                                </div>
+                                <div class="subscribe-form">
+                                    <form action="#">
+                                        <input type="text" placeholder="Email Address">
+                                        <button><i class="fab fa-telegram-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright-area">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                            <div class="copyright-text">
+                                <p>Copyright &copy; 2021, All Right Reserved | Design by <a href="#">Hari Om
+                                        Technologies, Karad</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                            <div class="footer-menu">
+                                <ul>
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">Privacy</a></li>
+                                    <li><a href="#">Policy</a></li>
+                                    <li><a href="#">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- Footer -->
+
+
+
+
+    </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./js/myjs.js"></script>
+
+</body>
+
+</html>
